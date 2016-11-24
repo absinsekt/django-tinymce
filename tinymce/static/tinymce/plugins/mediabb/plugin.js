@@ -11,16 +11,16 @@ tinymce.PluginManager.add('mediabb', function(editor, url) {
 		});
 	}
 
-	editor.addButton('image', {
+	editor.addButton('mbimage', {
 		icon: 'image',
-		onclick: showWindow('Вставка изображения по ID', 'image')
+		onclick: function() { showWindow('Вставка изображения по ID', 'image'); }
 	});
-	editor.addButton('gallery', {
-		icon: 'gallery',
-		onclick: showWindow('Вставка галереи по ID', 'gallery')
+	editor.addButton('mbgallery', {
+		icon: 'browse',
+		onclick: function() { showWindow('Вставка галереи по ID', 'gallery'); }
 	});
-	editor.addButton('video', {
+	editor.addButton('mbvideo', {
 		icon: 'media',
-		onclick: showWindow('Вставка видео по ID', 'video')
+		onclick: function() { showWindow('Вставка видео по ID', 'video'); }
 	});
 });
